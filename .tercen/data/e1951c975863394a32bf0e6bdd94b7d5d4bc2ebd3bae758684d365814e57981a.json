@@ -1,0 +1,531 @@
+{
+ "kind": "ComputedTableSchema",
+ "id": "e1951c975863394a32bf0e6bdd94b7d5d4bc2ebd3bae758684d365814e57981a",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "1e2309bb-a906-434e-b0f4-d001677c349e",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "e1951c975863394a32bf0e6bdd94b7d5d4bc2ebd3bae758684d365814e57981a"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 1,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "1d3c0225-86a0-4731-be52-f8d02f7fa90f",
+   "name": "filename",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "7ee0970d-408b-41ae-9a84-279593353430",
+   "name": "mimetype",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "4cd9d681-acd5-4cc7-b429-42aeeee54a0c",
+   "name": ".content",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/e1/95/e1951c975863394a32bf0e6bdd94b7d5d4bc2ebd3bae758684d365814e57981a",
+ "relation": {
+  "kind": "Relation",
+  "id": "08185436-00f3-477c-a3bb-35d5aed96b03"
+ },
+ "size": 56416,
+ "query": {
+  "kind": "CubeQuery",
+  "relation": {
+   "kind": "CompositeRelation",
+   "id": "18c2fe23-7a27-4e94-8cc8-3c35923ea0f1",
+   "joinOperators": [
+    {
+     "kind": "JoinOperator",
+     "joinType": "leftOuter",
+     "leftPair": {
+      "kind": "ColumnPair",
+      "lColumns": [
+       "ds0.sex",
+       "ds0.sp",
+       "ds0.variable"
+      ],
+      "rColumns": [
+       "ds0.sex",
+       "ds0.sp",
+       "ds0.variable"
+      ]
+     },
+     "rightRelation": {
+      "kind": "RenameRelation",
+      "id": "3a9caa9c-22c2-482d-b654-7067d5624c87",
+      "relation": {
+       "kind": "CompositeRelation",
+       "id": "6425e513-0cf5-4f39-9f63-e1de210582f0",
+       "joinOperators": [
+        {
+         "kind": "JoinOperator",
+         "joinType": "leftOuter",
+         "leftPair": {
+          "kind": "ColumnPair",
+          "lColumns": [
+           ".ri"
+          ],
+          "rColumns": [
+           "263baa53f60ffc2d226df14762322f7b96838b10e32d4962189f9e3fffea41ad._rids"
+          ]
+         },
+         "rightRelation": {
+          "kind": "SimpleRelation",
+          "id": "263baa53f60ffc2d226df14762322f7b96838b10e32d4962189f9e3fffea41ad",
+          "index": 3
+         }
+        }
+       ],
+       "mainRelation": {
+        "kind": "CompositeRelation",
+        "id": "343487a8-275e-4c63-ba7e-aa2b3ab8aca9",
+        "joinOperators": [
+         {
+          "kind": "JoinOperator",
+          "joinType": "leftOuter",
+          "leftPair": {
+           "kind": "ColumnPair",
+           "lColumns": [
+            ".ci"
+           ],
+           "rColumns": [
+            "0c339426192f84f508c5fe7496bc9091231f163323c88e12c10f993d5818f495._rids"
+           ]
+          },
+          "rightRelation": {
+           "kind": "SimpleRelation",
+           "id": "0c339426192f84f508c5fe7496bc9091231f163323c88e12c10f993d5818f495",
+           "index": 2
+          }
+         }
+        ],
+        "mainRelation": {
+         "kind": "SimpleRelation",
+         "id": "7c451c58d47681c956809160db55be57cf24a78e474e84f0d3bf867ef880ff78",
+         "index": 1
+        }
+       }
+      },
+      "inNames": [
+       ".ci",
+       ".ri",
+       "ds1.value",
+       "7c451c58d47681c956809160db55be57cf24a78e474e84f0d3bf867ef880ff78._rids",
+       "7c451c58d47681c956809160db55be57cf24a78e474e84f0d3bf867ef880ff78.tlbId",
+       "ds0.sex",
+       "ds0.sp",
+       "0c339426192f84f508c5fe7496bc9091231f163323c88e12c10f993d5818f495._rids",
+       "0c339426192f84f508c5fe7496bc9091231f163323c88e12c10f993d5818f495.tlbId",
+       "ds0.variable",
+       "263baa53f60ffc2d226df14762322f7b96838b10e32d4962189f9e3fffea41ad._rids",
+       "263baa53f60ffc2d226df14762322f7b96838b10e32d4962189f9e3fffea41ad.tlbId",
+       "ds0.sex",
+       "ds0.sp",
+       "ds0.variable"
+      ],
+      "outNames": [
+       ".ci",
+       ".ri",
+       "ds1.value",
+       "7c451c58d47681c956809160db55be57cf24a78e474e84f0d3bf867ef880ff78._rids",
+       "7c451c58d47681c956809160db55be57cf24a78e474e84f0d3bf867ef880ff78.tlbId",
+       "ds0.sex",
+       "ds0.sp",
+       "0c339426192f84f508c5fe7496bc9091231f163323c88e12c10f993d5818f495._rids",
+       "0c339426192f84f508c5fe7496bc9091231f163323c88e12c10f993d5818f495.tlbId",
+       "ds0.variable",
+       "263baa53f60ffc2d226df14762322f7b96838b10e32d4962189f9e3fffea41ad._rids",
+       "263baa53f60ffc2d226df14762322f7b96838b10e32d4962189f9e3fffea41ad.tlbId",
+       "ds1..sex",
+       "ds1..sp",
+       "ds1..variable"
+      ]
+     }
+    }
+   ],
+   "mainRelation": {
+    "kind": "RenameRelation",
+    "id": "6f0710f8-53a8-4eba-93e2-1a5d20268eda",
+    "relation": {
+     "kind": "SimpleRelation",
+     "id": "c77b21a285125125511ed8b911b42987b5c522ab4952ea1652f256c0e6c670f1",
+     "index": 0
+    },
+    "inNames": [
+     "ds0.sp",
+     "ds0.sex",
+     "ds0.index",
+     "ds0.observation",
+     "ds0.variable",
+     "ds0.measurement",
+     "ds0.filename",
+     ".ci",
+     "ds0.filename_of_zip",
+     "c77b21a285125125511ed8b911b42987b5c522ab4952ea1652f256c0e6c670f1._rids",
+     "c77b21a285125125511ed8b911b42987b5c522ab4952ea1652f256c0e6c670f1.tlbId"
+    ],
+    "outNames": [
+     "ds0.sp",
+     "ds0.sex",
+     "ds0.index",
+     "ds0.observation",
+     "ds0.variable",
+     "ds0.measurement",
+     "ds0.filename",
+     ".ci",
+     "ds0.filename_of_zip",
+     "c77b21a285125125511ed8b911b42987b5c522ab4952ea1652f256c0e6c670f1._rids",
+     "c77b21a285125125511ed8b911b42987b5c522ab4952ea1652f256c0e6c670f1.tlbId"
+    ]
+   }
+  },
+  "colColumns": [
+   {
+    "kind": "Factor",
+    "name": "ds0.sp",
+    "type": "string"
+   }
+  ],
+  "rowColumns": [
+   {
+    "kind": "Factor",
+    "name": "ds0.variable",
+    "type": "string"
+   }
+  ],
+  "axisQueries": [
+   {
+    "kind": "CubeAxisQuery",
+    "pointSize": 4,
+    "chartType": "bar",
+    "yAxis": {
+     "kind": "Factor",
+     "name": "ds1.value",
+     "type": "double"
+    },
+    "yAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": [
+      {
+       "kind": "Pair",
+       "key": "axisType",
+       "value": "row"
+      },
+      {
+       "kind": "Pair",
+       "key": "includeZero",
+       "value": "true"
+      }
+     ]
+    },
+    "xAxis": {
+     "kind": "Factor",
+     "name": "ds0.sex",
+     "type": "string"
+    },
+    "xAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "errors": [],
+    "labels": [],
+    "colors": [],
+    "preprocessors": []
+   }
+  ],
+  "filters": {
+   "kind": "Filters",
+   "removeNaN": true,
+   "namedFilters": []
+  },
+  "operatorSettings": {
+   "kind": "OperatorSettings",
+   "namespace": "ds2",
+   "operatorRef": {
+    "kind": "OperatorRef",
+    "name": "Plot",
+    "version": "0.2.0",
+    "operatorId": "2",
+    "operatorKind": "ROperator",
+    "propertyValues": [
+     {
+      "kind": "PropertyValue",
+      "name": "plot_type",
+      "value": "png"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "plot.width",
+      "value": ""
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "plot.height",
+      "value": ""
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "base.size",
+      "value": "11"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "x_range",
+      "value": ""
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "y_range",
+      "value": ""
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "xlab",
+      "value": ""
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "ylab",
+      "value": ""
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "title",
+      "value": ""
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "subtitle",
+      "value": ""
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "caption",
+      "value": ""
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "legend.title",
+      "value": ""
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "bar.position",
+      "value": "dodge"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "theme",
+      "value": "light"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "scales",
+      "value": "fixed"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "rotate_x_axis",
+      "value": "false"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "wrap.1d",
+      "value": "true"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "flip",
+      "value": "false"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "split_cells",
+      "value": "false"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "n_cells_max",
+      "value": "50"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "heatmap_annotation",
+      "value": "none"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "default.color",
+      "value": "#36454f"
+     }
+    ],
+    "url": {
+     "kind": "Url",
+     "uri": "https://github.com/tercen/plot_operator"
+    },
+    "operatorSpec": {
+     "kind": "OperatorSpec",
+     "ontologyUri": "https://tercen.com/_ontology/tercen",
+     "ontologyVersion": "0.0.1",
+     "inputSpecs": [
+      {
+       "kind": "CrosstabSpec",
+       "metaFactors": [
+        {
+         "kind": "MetaFactor",
+         "name": "page",
+         "type": "",
+         "description": "",
+         "ontologyMapping": "page",
+         "crosstabMapping": "row",
+         "cardinality": "",
+         "factors": []
+        },
+        {
+         "kind": "MetaFactor",
+         "name": "row factor",
+         "type": "",
+         "description": "",
+         "ontologyMapping": "sample",
+         "crosstabMapping": "row",
+         "cardinality": "",
+         "factors": [
+          {
+           "kind": "Factor",
+           "name": "ds0.variable",
+           "type": "string"
+          }
+         ]
+        },
+        {
+         "kind": "MetaFactor",
+         "name": "column factor",
+         "type": "",
+         "description": "",
+         "ontologyMapping": "variable",
+         "crosstabMapping": "column",
+         "cardinality": "",
+         "factors": [
+          {
+           "kind": "Factor",
+           "name": "ds0.sp",
+           "type": "string"
+          }
+         ]
+        }
+       ],
+       "axis": [
+        {
+         "kind": "AxisSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "y axis factor",
+           "type": "numeric",
+           "description": "",
+           "ontologyMapping": "y-axis",
+           "crosstabMapping": "y",
+           "cardinality": "1",
+           "factors": [
+            {
+             "kind": "Factor",
+             "name": "ds0.measurement",
+             "type": "double"
+            }
+           ]
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "x axis factor",
+           "type": "",
+           "description": "",
+           "ontologyMapping": "x-axis",
+           "crosstabMapping": "x",
+           "cardinality": "1",
+           "factors": [
+            {
+             "kind": "Factor",
+             "name": "ds0.sex",
+             "type": "string"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "outputSpecs": []
+    }
+   },
+   "environment": [],
+   "operatorModel": {
+    "kind": "OperatorModel"
+   }
+  },
+  "qtHash": "",
+  "columnHash": "",
+  "rowHash": ""
+ }
+}
