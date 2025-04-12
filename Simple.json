@@ -19,8 +19,16 @@
   "value": ""
  },
  "urls": [],
- "tags": [],
- "meta": [],
+ "tags": [
+  "blacklist"
+ ],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "PUBLISHED",
+   "value": "true"
+  }
+ ],
  "url": {
   "kind": "Url",
   "uri": ""
