@@ -23,8 +23,8 @@
  "meta": [],
  "url": {
   "kind": "Url",
-  "uri": ""
+  "uri": "https://github.com/tercen/grpc_test_workflow_template"
  },
- "version": "",
+ "version": "8e65bf7fc3f7f1a2a52e2a7f0773dc12810acbb9",
  "isPublic": false
 }

@@ -81,81 +81,16 @@
     "kind": "StepState",
     "taskId": "",
     "taskState": {
-     "kind": "DoneState"
+     "kind": "InitState"
     }
    },
    "description": "Select a data set.",
    "model": {
     "kind": "TableStepModel",
     "relation": {
-     "kind": "RenameRelation",
-     "id": "rename_69a94140-cdb0-4274-8683-e13b890c7866",
-     "relation": {
-      "kind": "InMemoryRelation",
-      "id": "0512fcd3-e75e-480d-8a1c-50c624757be0",
-      "inMemoryTable": {
-       "kind": "Table",
-       "nRows": 1,
-       "properties": {
-        "kind": "TableProperties",
-        "name": "",
-        "sortOrder": [],
-        "ascending": true
-       },
-       "columns": [
-        {
-         "kind": "Column",
-         "id": "documentId",
-         "name": "documentId",
-         "type": "string",
-         "nRows": 1,
-         "size": -1,
-         "metaData": {
-          "kind": "ColumnSchemaMetaData",
-          "sort": [],
-          "ascending": true,
-          "quartiles": [],
-          "properties": []
-         },
-         "cValues": {
-          "kind": "CValues"
-         },
-         "values": [
-          "af3ec5ee-7e73-4d8b-b5ed-8ca5a6389251"
-         ]
-        },
-        {
-         "kind": "Column",
-         "id": ".documentId",
-         "name": ".documentId",
-         "type": "string",
-         "nRows": 1,
-         "size": -1,
-         "metaData": {
-          "kind": "ColumnSchemaMetaData",
-          "sort": [],
-          "ascending": true,
-          "quartiles": [],
-          "properties": []
-         },
-         "cValues": {
-          "kind": "CValues"
-         },
-         "values": [
-          "crabs-long.csv"
-         ]
-        }
-       ]
-      }
-     },
-     "inNames": [
-      "documentId",
-      ".documentId"
-     ],
-     "outNames": [
-      "documentId",
-      ".documentId"
-     ]
+     "kind": "UnionRelation",
+     "id": "fc15a934-e9fc-4225-8ced-de8755063de0",
+     "relations": []
     },
     "filterSelector": ""
    }
@@ -196,9 +131,9 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "f60e78bcb66dddc59067a2275905b75e",
+    "taskId": "",
     "taskState": {
-     "kind": "DoneState"
+     "kind": "InitState"
     }
    },
    "description": "Perform computation on user defined projection.",
@@ -424,94 +359,8 @@
     "taskId": ""
    },
    "computedRelation": {
-    "kind": "CompositeRelation",
-    "id": "229560a7-949b-4820-b935-36fd5a2f0443",
-    "joinOperators": [
-     {
-      "kind": "JoinOperator",
-      "joinType": "",
-      "leftPair": {
-       "kind": "ColumnPair",
-       "lColumns": [
-        "documentId"
-       ],
-       "rColumns": [
-        "documentId"
-       ]
-      },
-      "rightRelation": {
-       "kind": "RenameRelation",
-       "id": "6411fd9e-6d54-44d8-aa79-b78f276dd80e",
-       "relation": {
-        "kind": "CompositeRelation",
-        "id": "94887dd9-f18c-465f-ab1d-f2a07ea16019",
-        "joinOperators": [
-         {
-          "kind": "JoinOperator",
-          "joinType": "",
-          "leftPair": {
-           "kind": "ColumnPair",
-           "lColumns": [
-            ".ci"
-           ],
-           "rColumns": [
-            "874631d55990f76387f0e513cf95bb39bfbe8476a83d359abb1cc0af8b218620._rids"
-           ]
-          },
-          "rightRelation": {
-           "kind": "SimpleRelation",
-           "id": "874631d55990f76387f0e513cf95bb39bfbe8476a83d359abb1cc0af8b218620",
-           "index": 0
-          }
-         }
-        ],
-        "mainRelation": {
-         "kind": "SimpleRelation",
-         "id": "c77b21a285125125511ed8b911b42987b5c522ab4952ea1652f256c0e6c670f1",
-         "index": 0
-        }
-       },
-       "inNames": [
-        "ds0.sp",
-        "ds0.sex",
-        "ds0.index",
-        "ds0.observation",
-        "ds0.variable",
-        "ds0.measurement",
-        "ds0.filename",
-        ".ci",
-        "ds0.filename_of_zip",
-        "c77b21a285125125511ed8b911b42987b5c522ab4952ea1652f256c0e6c670f1._rids",
-        "c77b21a285125125511ed8b911b42987b5c522ab4952ea1652f256c0e6c670f1.tlbId",
-        "documentId",
-        "874631d55990f76387f0e513cf95bb39bfbe8476a83d359abb1cc0af8b218620._rids",
-        "874631d55990f76387f0e513cf95bb39bfbe8476a83d359abb1cc0af8b218620.tlbId",
-        "documentId"
-       ],
-       "outNames": [
-        "ds0.sp",
-        "ds0.sex",
-        "ds0.index",
-        "ds0.observation",
-        "ds0.variable",
-        "ds0.measurement",
-        "ds0.filename",
-        ".ci",
-        "ds0.filename_of_zip",
-        "c77b21a285125125511ed8b911b42987b5c522ab4952ea1652f256c0e6c670f1._rids",
-        "c77b21a285125125511ed8b911b42987b5c522ab4952ea1652f256c0e6c670f1.tlbId",
-        "documentId",
-        "874631d55990f76387f0e513cf95bb39bfbe8476a83d359abb1cc0af8b218620._rids",
-        "874631d55990f76387f0e513cf95bb39bfbe8476a83d359abb1cc0af8b218620.tlbId",
-        "ds0..documentId"
-       ]
-      }
-     }
-    ],
-    "mainRelation": {
-     "kind": "Relation",
-     "id": "46135c67-7c60-40de-9b15-21a8cedd0b5d"
-    }
+    "kind": "Relation",
+    "id": "458fa146-72a0-4460-bde9-de9f8238c181"
    },
    "parentDataStepId": ""
   },
@@ -551,9 +400,9 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "f60e78bcb66dddc59067a2275906f418",
+    "taskId": "",
     "taskState": {
-     "kind": "DoneState"
+     "kind": "InitState"
     }
    },
    "description": "Perform computation on user defined projection.",
@@ -784,116 +633,8 @@
     "taskId": ""
    },
    "computedRelation": {
-    "kind": "CompositeRelation",
-    "id": "c4731e96-076b-489f-8f97-1f29848acfb9",
-    "joinOperators": [
-     {
-      "kind": "JoinOperator",
-      "joinType": "",
-      "leftPair": {
-       "kind": "ColumnPair",
-       "lColumns": [
-        "ds0.sex",
-        "ds0.sp",
-        "ds0.variable"
-       ],
-       "rColumns": [
-        "ds0.sex",
-        "ds0.sp",
-        "ds0.variable"
-       ]
-      },
-      "rightRelation": {
-       "kind": "RenameRelation",
-       "id": "148ded47-90ee-46c9-a452-31fb017a96e6",
-       "relation": {
-        "kind": "CompositeRelation",
-        "id": "8a56c379-d983-40b4-8699-b3851041d0af",
-        "joinOperators": [
-         {
-          "kind": "JoinOperator",
-          "joinType": "",
-          "leftPair": {
-           "kind": "ColumnPair",
-           "lColumns": [
-            ".ci"
-           ],
-           "rColumns": [
-            "0c339426192f84f508c5fe7496bc9091231f163323c88e12c10f993d5818f495._rids"
-           ]
-          },
-          "rightRelation": {
-           "kind": "SimpleRelation",
-           "id": "0c339426192f84f508c5fe7496bc9091231f163323c88e12c10f993d5818f495",
-           "index": 0
-          }
-         },
-         {
-          "kind": "JoinOperator",
-          "joinType": "",
-          "leftPair": {
-           "kind": "ColumnPair",
-           "lColumns": [
-            ".ri"
-           ],
-           "rColumns": [
-            "263baa53f60ffc2d226df14762322f7b96838b10e32d4962189f9e3fffea41ad._rids"
-           ]
-          },
-          "rightRelation": {
-           "kind": "SimpleRelation",
-           "id": "263baa53f60ffc2d226df14762322f7b96838b10e32d4962189f9e3fffea41ad",
-           "index": 0
-          }
-         }
-        ],
-        "mainRelation": {
-         "kind": "SimpleRelation",
-         "id": "7c451c58d47681c956809160db55be57cf24a78e474e84f0d3bf867ef880ff78",
-         "index": 0
-        }
-       },
-       "inNames": [
-        ".ci",
-        ".ri",
-        "ds1.value",
-        "7c451c58d47681c956809160db55be57cf24a78e474e84f0d3bf867ef880ff78._rids",
-        "7c451c58d47681c956809160db55be57cf24a78e474e84f0d3bf867ef880ff78.tlbId",
-        "ds0.sex",
-        "ds0.sp",
-        "0c339426192f84f508c5fe7496bc9091231f163323c88e12c10f993d5818f495._rids",
-        "0c339426192f84f508c5fe7496bc9091231f163323c88e12c10f993d5818f495.tlbId",
-        "ds0.variable",
-        "263baa53f60ffc2d226df14762322f7b96838b10e32d4962189f9e3fffea41ad._rids",
-        "263baa53f60ffc2d226df14762322f7b96838b10e32d4962189f9e3fffea41ad.tlbId",
-        "ds0.sex",
-        "ds0.sp",
-        "ds0.variable"
-       ],
-       "outNames": [
-        ".ci",
-        ".ri",
-        "ds1.value",
-        "7c451c58d47681c956809160db55be57cf24a78e474e84f0d3bf867ef880ff78._rids",
-        "7c451c58d47681c956809160db55be57cf24a78e474e84f0d3bf867ef880ff78.tlbId",
-        "ds0.sex",
-        "ds0.sp",
-        "0c339426192f84f508c5fe7496bc9091231f163323c88e12c10f993d5818f495._rids",
-        "0c339426192f84f508c5fe7496bc9091231f163323c88e12c10f993d5818f495.tlbId",
-        "ds0.variable",
-        "263baa53f60ffc2d226df14762322f7b96838b10e32d4962189f9e3fffea41ad._rids",
-        "263baa53f60ffc2d226df14762322f7b96838b10e32d4962189f9e3fffea41ad.tlbId",
-        "ds1..sex",
-        "ds1..sp",
-        "ds1..variable"
-       ]
-      }
-     }
-    ],
-    "mainRelation": {
-     "kind": "Relation",
-     "id": "74c5c2f7-dc6f-49ed-bc2a-4ca6c5fab3a9"
-    }
+    "kind": "Relation",
+    "id": "ba30138f-b39b-4ed0-96b4-d2eff5ff1cf7"
    },
    "parentDataStepId": ""
   },
@@ -933,9 +674,9 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "f60e78bcb66dddc59067a227590a95fc",
+    "taskId": "",
     "taskState": {
-     "kind": "DoneState"
+     "kind": "InitState"
     }
    },
    "description": "Perform computation on user defined projection.",
@@ -1367,28 +1108,8 @@
     "taskId": ""
    },
    "computedRelation": {
-    "kind": "CompositeRelation",
-    "id": "a30e257e-3e7c-43c3-b980-20d35b3b01db",
-    "joinOperators": [
-     {
-      "kind": "JoinOperator",
-      "joinType": "",
-      "leftPair": {
-       "kind": "ColumnPair",
-       "lColumns": [],
-       "rColumns": []
-      },
-      "rightRelation": {
-       "kind": "SimpleRelation",
-       "id": "e1951c975863394a32bf0e6bdd94b7d5d4bc2ebd3bae758684d365814e57981a",
-       "index": 0
-      }
-     }
-    ],
-    "mainRelation": {
-     "kind": "Relation",
-     "id": "9843f1fc-3846-432f-a1cd-c3077f9ded45"
-    }
+    "kind": "Relation",
+    "id": "e524a511-4542-41c3-b86b-8a9d65a5ac12"
    },
    "parentDataStepId": ""
   }
