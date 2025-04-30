@@ -1,0 +1,42 @@
+{
+ "kind": "FileDocument",
+ "id": "crabs-long.csv",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "crabs-long.csv",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "dataUri": "lfs/4c/3c/7b53b1d4b6e7a3ed5882b5b6a2900f9fb40b140bc96aaa1c7d1b92d32bb2",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": ""
+ },
+ "size": 18045
+}
