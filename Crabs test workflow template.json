@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "3",
+ "id": "4",
  "isDeleted": false,
  "rev": "",
  "description": "",
@@ -79,6 +79,12 @@
    "id": "6ba6c347-d4dc-4c7c-954e-dd867e1445a2",
    "inputId": "108aeca0-2bf7-4f58-8e3a-9324c1c09f7a-i-0",
    "outputId": "e4e55852-fd23-4c0d-b616-e6cda0f5b54a-o-0"
+  },
+  {
+   "kind": "Link",
+   "id": "31d6f84a-b0f0-4497-ab4b-8e25c3875a99",
+   "inputId": "0daab017-f1c4-4fb8-8064-c9f64f4013df-i-0",
+   "outputId": "108aeca0-2bf7-4f58-8e3a-9324c1c09f7a-o-0"
   }
  ],
  "steps": [
@@ -121,7 +127,7 @@
     "kind": "TableStepModel",
     "relation": {
      "kind": "UnionRelation",
-     "id": "22461f6b-bb78-4298-8146-1f37dd8c92d5",
+     "id": "8009d0f1-5937-44eb-924a-bc4d3f6b6943",
      "relations": []
     },
     "filterSelector": ""
@@ -322,7 +328,7 @@
       "kind": "OperatorRef",
       "name": "CSV",
       "version": "0.3.2",
-      "operatorId": "2",
+      "operatorId": "3",
       "operatorKind": "DockerOperator",
       "propertyValues": [
        {
@@ -397,7 +403,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "1251e4ea-17e5-476d-9f50-658a2093842b"
+    "id": "cc8ebf47-0313-4b18-87f4-80a0efd70154"
    },
    "parentDataStepId": ""
   },
@@ -650,7 +656,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "b4910467-b07b-48f2-9a89-30287e98a093"
+    "id": "331914d7-d7cb-45f1-89fb-85eac758900b"
    },
    "parentDataStepId": ""
   },
@@ -684,8 +690,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 446.505,
-     "y": 535.5
+     "x": 372.505,
+     "y": 533.5
     }
    },
    "state": {
@@ -1111,7 +1117,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "436155f8-1edf-4406-938a-c9a70b080ff0"
+    "id": "515ae078-7df7-4026-a29f-fac663ad118f"
    },
    "parentDataStepId": ""
   },
@@ -1217,7 +1223,7 @@
     "topLeft": {
      "kind": "Point",
      "x": 500.7901840209961,
-     "y": 70.5
+     "y": 69.5
     }
    },
    "state": {
@@ -1232,7 +1238,7 @@
     "kind": "TableStepModel",
     "relation": {
      "kind": "UnionRelation",
-     "id": "3ada4028-2f8c-4156-a7b4-e80a019cc741",
+     "id": "131df99f-7070-4dec-b3ad-a98f37c7dfdc",
      "relations": []
     },
     "filterSelector": ""
@@ -1433,7 +1439,7 @@
       "kind": "OperatorRef",
       "name": "CSV",
       "version": "0.3.2",
-      "operatorId": "2",
+      "operatorId": "3",
       "operatorKind": "DockerOperator",
       "propertyValues": [
        {
@@ -1508,7 +1514,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "c361318b-5ebd-4649-b6ae-7172250753dc"
+    "id": "2f65f0d8-c6f9-42c2-a767-63f3b2431cbe"
    },
    "parentDataStepId": ""
   },
@@ -1580,6 +1586,300 @@
     "joinType": ""
    },
    "rightAttributes": []
+  },
+  {
+   "kind": "DataStep",
+   "id": "0daab017-f1c4-4fb8-8064-c9f64f4013df",
+   "groupId": "",
+   "name": "Export Table",
+   "inputs": [
+    {
+     "kind": "InputPort",
+     "id": "0daab017-f1c4-4fb8-8064-c9f64f4013df-i-0",
+     "linkType": "relation",
+     "name": "data"
+    }
+   ],
+   "outputs": [
+    {
+     "kind": "OutputPort",
+     "id": "0daab017-f1c4-4fb8-8064-c9f64f4013df-o-0",
+     "linkType": "relation",
+     "name": "data"
+    }
+   ],
+   "rectangle": {
+    "kind": "Rectangle",
+    "extent": {
+     "kind": "Point",
+     "x": 92.72970581054688,
+     "y": 55.0
+    },
+    "topLeft": {
+     "kind": "Point",
+     "x": 527.6351470947266,
+     "y": 536.5
+    }
+   },
+   "state": {
+    "kind": "StepState",
+    "taskId": "",
+    "taskState": {
+     "kind": "InitState"
+    }
+   },
+   "description": "",
+   "model": {
+    "kind": "Crosstab",
+    "axis": {
+     "kind": "XYAxisList",
+     "rectangleSelections": [],
+     "xyAxis": [
+      {
+       "kind": "XYAxis",
+       "chart": {
+        "kind": "ChartPoint",
+        "name": "",
+        "properties": {
+         "kind": "Properties",
+         "properties": [],
+         "propertyValues": []
+        },
+        "pointSize": 4
+       },
+       "colors": {
+        "kind": "Colors",
+        "factors": [],
+        "palette": {
+         "kind": "CategoryPalette",
+         "backcolor": 0,
+         "properties": [],
+         "colorList": {
+          "kind": "ColorList",
+          "name": ""
+         },
+         "stringColorElements": []
+        }
+       },
+       "errors": {
+        "kind": "Errors",
+        "factors": []
+       },
+       "labels": {
+        "kind": "Labels",
+        "factors": []
+       },
+       "xAxis": {
+        "kind": "Axis",
+        "axisExtent": {
+         "kind": "Point",
+         "x": 80.0,
+         "y": 30.0
+        },
+        "axisSettings": {
+         "kind": "AxisSettings",
+         "meta": []
+        },
+        "graphicalFactor": {
+         "kind": "GraphicalFactor",
+         "factor": {
+          "kind": "Factor",
+          "name": "",
+          "type": "string"
+         },
+         "rectangle": {
+          "kind": "Rectangle",
+          "extent": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          },
+          "topLeft": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          }
+         }
+        }
+       },
+       "yAxis": {
+        "kind": "Axis",
+        "axisExtent": {
+         "kind": "Point",
+         "x": 80.0,
+         "y": 30.0
+        },
+        "axisSettings": {
+         "kind": "AxisSettings",
+         "meta": []
+        },
+        "graphicalFactor": {
+         "kind": "GraphicalFactor",
+         "factor": {
+          "kind": "Factor",
+          "name": "ds1.value",
+          "type": "double"
+         },
+         "rectangle": {
+          "kind": "Rectangle",
+          "extent": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          },
+          "topLeft": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          }
+         }
+        }
+       },
+       "taskId": "",
+       "preprocessors": []
+      }
+     ]
+    },
+    "columnTable": {
+     "kind": "CrosstabTable",
+     "cellSize": 250.0,
+     "offset": 0,
+     "graphicalFactors": [
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "js0.gender",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      }
+     ],
+     "rectangleSelections": [],
+     "nRows": 2
+    },
+    "filters": {
+     "kind": "Filters",
+     "removeNaN": true,
+     "namedFilters": []
+    },
+    "operatorSettings": {
+     "kind": "OperatorSettings",
+     "namespace": "ds4",
+     "operatorRef": {
+      "kind": "OperatorRef",
+      "name": "Export Table",
+      "version": "1.0.8",
+      "operatorId": "2",
+      "operatorKind": "DockerOperator",
+      "propertyValues": [
+       {
+        "kind": "PropertyValue",
+        "name": "format",
+        "value": "CSV"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "filename_prefix",
+        "value": "Exported_Table"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "export_to_project",
+        "value": "false"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "export_subfolder_name",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "export_subfolder_id",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "na_encoding",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "decimal_character",
+        "value": "."
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "data_separator",
+        "value": ","
+       }
+      ],
+      "url": {
+       "kind": "Url",
+       "uri": "https://github.com/tercen/export_table_operator"
+      },
+      "operatorSpec": {
+       "kind": "OperatorSpec",
+       "ontologyUri": "",
+       "ontologyVersion": "",
+       "inputSpecs": [],
+       "outputSpecs": []
+      }
+     },
+     "environment": [],
+     "operatorModel": {
+      "kind": "OperatorModel"
+     }
+    },
+    "rowTable": {
+     "kind": "CrosstabTable",
+     "cellSize": 125.0,
+     "offset": 0,
+     "graphicalFactors": [
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "gs0.variable",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 80.0,
+         "y": 0.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      }
+     ],
+     "rectangleSelections": [],
+     "nRows": 5
+    },
+    "taskId": ""
+   },
+   "computedRelation": {
+    "kind": "Relation",
+    "id": "369c9884-b4b6-469f-8aea-c5e270c396c7"
+   },
+   "parentDataStepId": ""
   }
  ],
  "offset": {
